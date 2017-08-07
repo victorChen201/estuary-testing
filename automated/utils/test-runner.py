@@ -22,6 +22,8 @@ except ImportError as e:
     print('Please run the below command to install modules required')
     print('Python2: pip install -r ${REPO_PATH}/automated/utils/requirements.txt')
     print('Python3: pip3 install -r ${REPO_PATH}/automated/utils/requirements.txt')
+    print('If not install pip in debian distro,please run the below command to install')
+    print('yum -y install epel-release && yum install python-pip')
     sys.exit(1)
 
 
