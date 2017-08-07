@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AutomatedTestRun	test-runner	/^class AutomatedTestRun(TestRun):$/;"	c
+ManualTestRun	test-runner	/^class ManualTestRun(TestRun, cmd.Cmd):$/;"	c
+ManualTestShell	test-runner	/^class ManualTestShell(cmd.Cmd):$/;"	c
+ResultParser	test-runner	/^class ResultParser(object):$/;"	c
+TestDefinition	test-runner	/^class TestDefinition(object):$/;"	c
+TestPlan	test-runner	/^class TestPlan(object):$/;"	c
+TestRun	test-runner	/^class TestRun(object):$/;"	c
+TestSetup	test-runner	/^class TestSetup(object):$/;"	c
+__init__	test-runner	/^    def __init__(self, args):$/;"	m	class:TestPlan
+__init__	test-runner	/^    def __init__(self, test, args):$/;"	m	class:ResultParser
+__init__	test-runner	/^    def __init__(self, test, args):$/;"	m	class:TestDefinition
+__init__	test-runner	/^    def __init__(self, test, args):$/;"	m	class:TestRun
+__init__	test-runner	/^    def __init__(self, test, args):$/;"	m	class:TestSetup
+__init__	test-runner	/^    def __init__(self, test_dict, result_path):$/;"	m	class:ManualTestShell
+_print_step	test-runner	/^    def _print_step(self):$/;"	m	class:ManualTestShell
+_record_result	test-runner	/^    def _record_result(self, result):$/;"	m	class:ManualTestShell
+check_result	test-runner	/^    def check_result(self):$/;"	m	class:AutomatedTestRun
+check_result	test-runner	/^    def check_result(self):$/;"	m	class:ManualTestRun
+check_result	test-runner	/^    def check_result(self):$/;"	m	class:TestRun
+checkout_version	test-runner	/^    def checkout_version(self):$/;"	m	class:TestSetup
+copy_test_repo	test-runner	/^    def copy_test_repo(self):$/;"	m	class:TestSetup
+create_dir	test-runner	/^    def create_dir(self):$/;"	m	class:TestSetup
+create_uuid_file	test-runner	/^    def create_uuid_file(self):$/;"	m	class:TestSetup
+definition	test-runner	/^    def definition(self):$/;"	m	class:TestDefinition
+dict_to_csv	test-runner	/^    def dict_to_csv(self):$/;"	m	class:ResultParser
+dict_to_json	test-runner	/^    def dict_to_json(self):$/;"	m	class:ResultParser
+do_EOF	test-runner	/^    do_EOF = do_quit$/;"	v	class:ManualTestShell
+do_current	test-runner	/^    def do_current(self, line):$/;"	m	class:ManualTestShell
+do_description	test-runner	/^    def do_description(self, line):$/;"	m	class:ManualTestShell
+do_expected	test-runner	/^    def do_expected(self, line):$/;"	m	class:ManualTestShell
+do_fail	test-runner	/^    def do_fail(self, line):$/;"	m	class:ManualTestShell
+do_next	test-runner	/^    def do_next(self, line):$/;"	m	class:ManualTestShell
+do_pass	test-runner	/^    def do_pass(self, line):$/;"	m	class:ManualTestShell
+do_quit	test-runner	/^    def do_quit(self, line):$/;"	m	class:ManualTestShell
+do_skip	test-runner	/^    def do_skip(self, line):$/;"	m	class:ManualTestShell
+do_start	test-runner	/^    do_start = do_current$/;"	v	class:ManualTestShell
+do_steps	test-runner	/^    def do_steps(self, line):$/;"	m	class:ManualTestShell
+get_args	test-runner	/^def get_args():$/;"	f
+get_test_run	test-runner	/^    def get_test_run(self):$/;"	m	class:TestDefinition
+handle_parameters	test-runner	/^    def handle_parameters(self):$/;"	m	class:TestDefinition
+main	test-runner	/^def main():$/;"	f
+metadata	test-runner	/^    def metadata(self):$/;"	m	class:TestDefinition
+parse_stdout	test-runner	/^    def parse_stdout(self):$/;"	m	class:ResultParser
+run	test-runner	/^    def run(self):$/;"	m	class:AutomatedTestRun
+run	test-runner	/^    def run(self):$/;"	m	class:ManualTestRun
+run	test-runner	/^    def run(self):$/;"	m	class:ResultParser
+run	test-runner	/^    def run(self):$/;"	m	class:TestDefinition
+run	test-runner	/^    def run(self):$/;"	m	class:TestRun
+test_list	test-runner	/^    def test_list(self, kind="automated"):$/;"	m	class:TestPlan
+validate_env	test-runner	/^    def validate_env(self):$/;"	m	class:TestSetup
