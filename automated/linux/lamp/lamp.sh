@@ -60,7 +60,7 @@ else
     esac
 fi
 if [ "${dist}" = "opensuse" ]; then
-    cp ./html/index.html /srv/www/htdocs/
+    cp ./html/* /srv/www/htdocs/
 else
     cp ./html/* /var/www/html/
 fi
