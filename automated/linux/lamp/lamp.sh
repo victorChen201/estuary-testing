@@ -51,8 +51,10 @@ else
         systemctl start mariadb
         ;;
       opensuse)
-          pkgs="apache2 php5 php5-mysql apache2-mod_php5 mysql-community-server  mysql-community-server-tools "
+          pkgs="apache2 php5 php5-mysql apache2-mod_php5 php5-mysql php5-pear-MDB2_Driver_mysql php5-pear-MDB2_Driver_mysqli phpMyAdmin "
           install_deps "curl ${pkgs}"
+          service apache2 start
+          service mysql start
       *)
         error_msg "Unsupported distribution!"
     esac

@@ -206,7 +206,7 @@ install_deps() {
             dnf -e 0 -y install ${pkgs}
             ;;
           opensuese)
-            zypper  install ${pkgs}
+            zypper  install -y ${pkgs}
             ;;
           *)
             warn_msg "Unsupported distro: ${dist}! Package installation skipped."
