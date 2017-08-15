@@ -205,6 +205,9 @@ install_deps() {
             # shellcheck disable=SC2086
             dnf -e 0 -y install ${pkgs}
             ;;
+          opensuese)
+            zypper  install ${pkgs}
+            ;;
           *)
             warn_msg "Unsupported distro: ${dist}! Package installation skipped."
             ;;

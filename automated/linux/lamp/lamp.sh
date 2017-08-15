@@ -50,13 +50,18 @@ else
         systemctl start httpd.service
         systemctl start mariadb
         ;;
+      opensuse)
+          pkgs="apache2 php5 php5-mysql apache2-mod_php5 mysql-community-server  mysql-community-server-tools "
+          install_deps "curl ${pkgs}"
       *)
         error_msg "Unsupported distribution!"
     esac
 fi
-
-cp ./html/* /var/www/html/
-
+if [ "${dist}" = "opensuse" ]; then
+    cp ./html/index.html /srv/www/htdocs/
+else
+    cp ./html/* /var/www/html/
+fi
 # Test Apache.
 curl -o "${OUTPUT}/index.html" "http://localhost/index.html"
 grep "Test Page for the Apache HTTP Server" "${OUTPUT}/index.html"
