@@ -9,6 +9,7 @@ metadata:
         - ubuntu
         - fedora
         - centos
+        - opensuse
     scope:
         - performance
     devices:

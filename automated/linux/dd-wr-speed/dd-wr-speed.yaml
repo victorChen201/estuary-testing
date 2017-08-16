@@ -7,6 +7,8 @@ metadata:
     os:
         - debian
         - fedora
+        - opensuse
+        - ubuntu
     devices:
         - mustang
         - hi6220-hikey

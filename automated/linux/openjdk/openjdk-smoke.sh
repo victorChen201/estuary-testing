@@ -41,6 +41,9 @@ else
         centos|fedora)
             install_deps "java-1.${VERSION}.0-openjdk-devel"
             ;;
+        opensuse)
+            install_deps "java-1_${VERSION}_0-openjdk-devel"
+            ;;
         *)
             error_msg "Unsupported distribution"
             ;;

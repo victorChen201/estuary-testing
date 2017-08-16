@@ -40,7 +40,7 @@ install() {
     dist_name
     # shellcheck disable=SC2154
     case "${dist}" in
-      debian|ubuntu)
+      debian|ubuntu|opensuse)
         pkgs="fio"
         install_deps "${pkgs}" "${SKIP_INSTALL}"
         ;;

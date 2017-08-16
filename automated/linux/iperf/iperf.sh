@@ -54,6 +54,9 @@ else
             make
             make install
             ;;
+        opensuse)
+            install_deps "iperf"
+            ;;
     esac
 fi
 

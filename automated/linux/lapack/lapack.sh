@@ -72,6 +72,11 @@ install() {
         pkgs="binutils gcc glibc-static make python sed tar wget gfortran"
         install_deps "${pkgs}" "${SKIP_INSTALL}"
         ;;
+    opensuse)
+        pkgs="binutils gcc make python sed tar wget gcc-fortran"
+        install_deps "${pkgs}" "${SKIP_INSTALL}"
+        ;;
+
     esac
 }
 

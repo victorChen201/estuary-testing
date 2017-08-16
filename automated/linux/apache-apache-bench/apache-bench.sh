@@ -34,7 +34,7 @@ else
     dist_name
     # shellcheck disable=SC2154
     case "${dist}" in
-      debian|ubuntu)
+      debian|ubuntu|opensuse)
         pkgs="apache2 apache2-utils"
         install_deps "${pkgs}"
         systemctl restart apache2
